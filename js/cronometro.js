@@ -1,3 +1,5 @@
+//* Nicolas Naranjo
+
 function iniciaCronometro() {
   var segundos = 10;
   var minutos = 0;
