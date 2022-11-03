@@ -1,10 +1,12 @@
+//* DERICK SAA
+
 // Escribimos los niveles dinámicamente
 escribeNiveles();
 
 // Asignamos eventos iniciales
-  //pista aca un evento Click decifra donde ponerlo
-document.querySelectorAll(".reiniciar").forEach(function(elemento) {
-  elemento.addEventListener("", reiniciar);
+//pista aca un evento Click decifra donde ponerlo
+document.querySelectorAll(".reiniciar").forEach(function (elemento) {
+  elemento.addEventListener("click", reiniciar); //*click puesto
 });
 
 document
@@ -20,9 +22,9 @@ document
 document
   //pista aca falta addEventListenet decifra donde ponerlo
   .querySelector("#cierra-niveles")
-  .("click", ocultaMenuNiveles);
+  .addEventListener("click", ocultaMenuNiveles); //*addEventListenet puesto
 
-document.querySelectorAll(".nivel").forEach(function(elemento) {
+document.querySelectorAll(".nivel").forEach(function (elemento) {
   elemento.addEventListener("click", cambiaNivel);
 });
 
