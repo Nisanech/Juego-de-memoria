@@ -1,3 +1,5 @@
+//*Viviana Orjuela Pedraza
+
 function descubrir() {
   var descubiertas;
   var tarjetasPendientes;
@@ -17,7 +19,7 @@ function descubrir() {
     return;
   }
   //pista aca falta ubicar la palabra descubiertas para invicar la funcion de las cartas
-  comparar();
+  comparar(descubiertas);
   actualizaContador();
   tarjetasPendientes = document.querySelectorAll(".tarjeta:not(.acertada)");
   if (tarjetasPendientes.length === 0) {

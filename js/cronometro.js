@@ -1,7 +1,7 @@
 //* Nicolas Naranjo
 
 function iniciaCronometro() {
-  var segundos = 10;
+  var segundos = 60;
   var minutos = 0;
   var segundosTexto;
   var minutosTexto;
@@ -9,7 +9,7 @@ function iniciaCronometro() {
   function actualizaContador() {
     segundos--;
     if (segundos < 0) {
-      segundos = 30;
+      segundos = 60;
       minutos--;
     }
     if (minutos < 0) {
@@ -20,7 +20,7 @@ function iniciaCronometro() {
     }
     segundosTexto = segundos;
     minutosTexto = minutos;
-    if (segundos < 10) {
+    if (segundos < 60) {
       segundosTexto = "0" + segundos;
     }
     if (minutos < 10) {

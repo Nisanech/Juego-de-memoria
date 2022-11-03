@@ -4,8 +4,8 @@
 function acierto(lasTarjetas) {
   lasTarjetas.forEach(function (elemento) {
     //pista aca falta llamar la función
-    acierto(lasTarjetas);
-    elemento.classList.add("");
+    
+    elemento.classList.add("acertada");
   });
   document.querySelector("#sonido-acierto").play();
 }
